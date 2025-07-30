@@ -19,6 +19,7 @@ geotr_sources = [
   'gstmirror.c',
   'gstfisheye.c',
   'gstequirectangular.c',    
+  'gstremap.c',    
   'gstperspective.c',
 ]
 

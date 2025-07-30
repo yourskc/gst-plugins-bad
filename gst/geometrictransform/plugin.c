@@ -37,6 +37,7 @@
 #include "gstmirror.h"
 #include "gstfisheye.h"
 #include "gstequirectangular.h"
+#include "gstremap.h"
 #include "gstperspective.h"
 
 static gboolean
@@ -89,6 +90,9 @@ plugin_init (GstPlugin * plugin)
 
   if (!gst_equirectangular_plugin_init (plugin))
     return FALSE;
+   
+  if (!gst_remap_plugin_init (plugin))
+    return FALSE;  
     
   if (!gst_perspective_plugin_init (plugin))
     return FALSE;
